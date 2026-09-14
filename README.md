@@ -537,14 +537,3 @@ If you find this project useful or interesting, consider giving the repository a
 📜 License
 
 This project is developed for educational and development purposes.
-
-
-
-`README.md` mein **Ctrl + A → pura old content delete → upar wala pura content paste → Ctrl + S**.
-
-
-
-```powershell
-git add README.md
-git commit -m "docs: improve project README"
-git push
