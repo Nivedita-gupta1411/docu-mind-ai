@@ -4,8 +4,7 @@ python-dotenv
 pymongo
 python-docx
 PyPDF2
-sentence-transformers
-faiss-cpu
 numpy
+faiss-cpu
 google-genai
 python-multipart

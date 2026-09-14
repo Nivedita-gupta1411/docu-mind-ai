@@ -19,7 +19,9 @@ class Settings:
         p.mkdir(parents=True, exist_ok=True)
     MONGODB_URI: str = os.getenv('MONGODB_URI', 'mongodb://localhost:27017')
     MONGODB_DB: str = os.getenv('MONGODB_DB', 'doc_intel')
-    EMBEDDING_MODEL: str = os.getenv('EMBEDDING_MODEL', 'sentence-transformers/all-MiniLM-L6-v2')
+    EMBEDDING_MODEL: str = os.getenv('EMBEDDING_MODEL','gemini-embedding-001')
+
+    EMBEDDING_DIMENSION: int = int(os.getenv('EMBEDDING_DIMENSION','768'))
     LLM_PROVIDER: str = os.getenv('LLM_PROVIDER', 'gemini')
     OPENAI_API_KEY: str = os.getenv('OPENAI_API_KEY', '')
     GEMINI_API_KEY: str = os.getenv('GEMINI_API_KEY', '')
